@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    {% for variety,years in products.items%}
+    <list-item>
+        <variety>{{variety}}</variety>
+        {% for year in years%}
+        <year>{{year}}</year>
+        {% endfor %}
+    </list-item>
+    {%endfor%}
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    {% for urun_id,urun in products.items%}
+    <list-item>
+        <url>{{url}}</url>
+        <urun_id>{{urun_id}}</urun_id>
+        <urun>{{urun}}</urun>
+    </list-item>
+    {%endfor%}
+</root>
